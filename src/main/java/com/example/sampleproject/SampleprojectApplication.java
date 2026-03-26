@@ -11,7 +11,7 @@ public class SampleprojectApplication {
         SpringApplication.run(SampleprojectApplication.class, args);
     }
 
-	@RequestMapping("/hello")
+	@RequestMapping("/hello",method = RequestMethod.GET)
 	public String sayHello(){
 		return "welcome to spring boot";
 	}
